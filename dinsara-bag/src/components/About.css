@@ -1,0 +1,130 @@
+.about {
+  background: white;
+  padding: 70px 30px;
+}
+
+.about-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-image-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img-frame {
+  width: 280px;
+  height: 320px;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 5px solid #ff4d9e;
+  box-shadow: 10px 10px 0 #ffd60a;
+}
+
+.about-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.about-decor {
+  position: absolute;
+  font-size: 2.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.decor1 { top: -10px; right: 20px; animation-delay: 0s; }
+.decor2 { bottom: -10px; left: 20px; animation-delay: 1.5s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.about-content {
+  flex: 1;
+  min-width: 260px;
+}
+
+.about-badge {
+  display: inline-block;
+  background: #fff0fa;
+  color: #ff006e;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  border: 1px solid #ffd6ec;
+}
+
+.about-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+.about-title span {
+  background: linear-gradient(135deg, #ff006e, #7b2d8b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-text {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.about-stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #ffe0f0, #f0d6ff);
+  padding: 16px 20px;
+  border-radius: 16px;
+  min-width: 90px;
+}
+
+.stat-num {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #7b2d8b;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #888;
+  text-align: center;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #ff4d9e;
+  --hot-pink: #ff006e;
+  --yellow: #ffd60a;
+  --purple: #7b2d8b;
+  --light-pink: #ffe0f0;
+  --white: #ffffff;
+  --dark: #1a1a2e;
+  --gray: #f8f8f8;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--purple);
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--hot-pink), var(--pink));
+  color: white;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, var(--yellow), #ffaa00);
+  color: var(--dark);
+}

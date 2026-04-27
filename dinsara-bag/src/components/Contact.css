@@ -1,0 +1,149 @@
+.contact {
+  background: linear-gradient(135deg, #fff9e6, #ffe0f0);
+  padding: 70px 30px;
+}
+
+.contact-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.contact-info h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #7b2d8b;
+  margin-bottom: 24px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.info-icon {
+  font-size: 1.6rem;
+  margin-top: 2px;
+}
+
+.info-item strong {
+  display: block;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 2px;
+}
+
+.info-item p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.facebook span {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+/* Form */
+.contact-form {
+  flex: 1;
+  min-width: 260px;
+  background: white;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  outline: none;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff4d9e;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+}
+
+.success-msg {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-inner {
+    flex-direction: column;
+  }
+}

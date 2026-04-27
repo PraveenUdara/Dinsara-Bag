@@ -1,0 +1,127 @@
+.float-container {
+  position: fixed;
+  bottom: 30px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  z-index: 999;
+}
+
+.float-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.float-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.3);
+}
+
+.float-btn.facebook {
+  background: #1877f2;
+}
+
+.float-btn.whatsapp {
+  background: #25d366;
+}
+
+.float-close {
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+  padding: 0;
+  line-height: 1;
+}
+
+.float-close:hover {
+  background: #ffe0f0;
+  color: #ff006e;
+  border-color: #ff006e;
+}
+
+/* Reopen button when closed */
+.float-reopen {
+  position: fixed;
+  bottom: 30px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff4d9e, #7b2d8b);
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  z-index: 999;
+  transition: transform 0.2s;
+}
+
+.float-reopen:hover {
+  transform: scale(1.1);
+}
+
+/* Scroll to top */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff4d9e, #7b2d8b);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(123, 45, 139, 0.4);
+  z-index: 999;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(123, 45, 139, 0.5);
+}
+
+@media (max-width: 480px) {
+  .float-container {
+    bottom: 20px;
+    right: 16px;
+  }
+
+  .scroll-top-btn {
+    bottom: 20px;
+    left: 16px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .float-btn {
+    width: 46px;
+    height: 46px;
+  }
+}
